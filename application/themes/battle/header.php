@@ -1,32 +1,35 @@
+<?
+include('core/controller/global_variables.php');
+?>
 <html xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="description" content="WowDersus Servidor privado de World Of Warcraft Mits of pandaria" />
-<title>Battle CMS</title>
+<title><?php echo $config['CmsTittle']; ?></title>
 
-<link rel="shortcut icon" href="application/themes/battle/assets/images/logos/favicon.png" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/common-game-site.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/wow/static/local-common/css/common2455.css?v15" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/wow.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/lightbox.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/cms.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/wow/static/css/cms43a0.css?v3" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/locale/en-gb.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/legal/ratings.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/profile.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/zone.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/summary.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/pet.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/css/modules/sidebar.css" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/wow/static/local-common/css/cms/blog2455.css?v15" />
-<link rel="stylesheet" type="text/css" media="all" href="application/themes/battle/assets/wow/static/local-common/css/cms/comments2455.css?v15" />
+<link rel="shortcut icon" href="<?php echo $config['StyleFolderUR']; ?>assets/images/logos/favicon.png" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/common-game-site.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/wow/static/local-common/css/common2455.css?v15" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/wow.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/lightbox.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/cms.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/wow/static/css/cms43a0.css?v3" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/locale/en-gb.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/legal/ratings.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/profile.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/zone.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/summary.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/pet.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/css/modules/sidebar.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/wow/static/local-common/css/cms/blog2455.css?v15" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $config['StyleFolderUR']; ?>assets/wow/static/local-common/css/cms/comments2455.css?v15" />
 
 <!-- Le Javascripts -->
-<script type="text/javascript" src="application/themes/battle/assets/wow/static/local-common/js/third-party/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="application/themes/battle/assets/js/third-party.js"></script>
-<script type="text/javascript" src="application/themes/battle/assets/js/common-game-site.js"></script>
+<script type="text/javascript" src="<?php echo $config['StyleFolderUR']; ?>wow/static/local-common/js/third-party/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="<?php echo $config['StyleFolderUR']; ?>js/third-party.js"></script>
+<script type="text/javascript" src="<?php echo $config['StyleFolderUR']; ?>js/common-game-site.js"></script>
 <script type="text/javascript" src="../static.wowhead.com/widgets/power.js"></script><script>var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }</script>
 <!-- Le Core Code -->
 <script type="text/javascript">
@@ -63,7 +66,7 @@ Flash.expressInstall = '../media.blizzard.com/global-video-player/expressInstall
 <div id="service">
 <ul class="service-bar">
 <li class="service-cell service-home">
-<a href="index.html" tabindex="50" accessKey="1" title="WowDersus HOME" data-action="WowDersus HOME">&nbsp;</a>
+<a href="index.html" tabindex="50" accessKey="1" title="Battle CMS" data-action="BATTLE CMS">&nbsp;</a>
 </li>
 <li class="service-cell service-welcome">
 <a href="account/login.html">Iniciar sesión</a> o <a href="account/register.html">Crear una cuenta</a>
@@ -235,7 +238,7 @@ JavaScript must be enabled to use this site.
 </div>
 </form>
 </div><!-- Search END -->
-<h1 id="logo"><a href="index.html">WowDersus</a></h1>
+<h1 id="logo"><a href="index.html">BattleCMS</a></h1>
 <!-- Header -->
 <div class="header-plate">
 <ul class="menu" id="menu">
